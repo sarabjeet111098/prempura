@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> PremPura Projects</title>
+        <!---------------Connection with CSS------------------->
+        <link rel ="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,500;1,600&display=swap" rel="stylesheet">
+   
+<link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+    <body>
+        
+<section class="header">
+<nav>
+
+    <a href="index.html"><img src="images/logo.png"style="mix-blend-mode: multiply;"></a>
+    <div class ="nav-links" id="navLinks">
+        
+
+        <i class="fa fa-times" onclick="hideMenu()"> </i>
+<ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">PROJECTS</a></li>
+    <li><a href="Gallery.html">GALLERY</a></li>
+    <li><a href="Contact.html">CONTACT US</a></li>
+            
+   
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"> </i>
+
+</nav>
+<div class="text-box">
+    <h1>Paradi Farms & Resort </h1>
+    <p> A project where dreams comes to reality  <br> A luxury which you and your loved ones deserve <br> A quite souleful surrounding to cherish the love of nature</p>
+
+<a href="about.html" class="hero-btn">Explore</a>
+
+</div>
+</section>
+
+
+<section class="main">
+    <div id="main">
+        <img src="images/f1.JPG" id="slideimage">
+    </div>
+</section>
+
+<!------------Tournaments------------->
+<section class="tournamets">
+
+    <h1> Serenity </h1>
+<p>Tucked between a tranquil lake, misty mountains, and whispering forest, this private cottage is a sanctuary of pure peace. Wake up to soft sunlight on the water, breathe in crisp mountain air, and unwind in a space designed for quiet comfort and natural beauty. Perfect for slow mornings, mindful evenings, and reconnecting with yourself—this is not just a stay, it’s a feeling of stillness you’ll want to return to. 🌿🕊️</p> 
+
+<div class="row">
+<div class="tournamets-col">
+<h2><a href="about.html">Lakeside luxury FarmHouse</a></h2>
+<p> Experience peaceful luxury surrounded by Hills , lake views, and greenry , in a thoughtfully planned Layout </p>
+
+</div>
+<div class="tournamets-col">
+<h2><a href="about.html"> Exotic Resort</a></h2>
+<p> An Exclusive resort desined to blend elegance with nature , transforming our acrage into a high-value asset </p>
+
+</div>
+
+<!--<div class="tournamets-col">
+<h2><a href="Gallery.html"> Events and Gathering</a></h2>
+<p> A versatile experience for friends and family gathering</p>
+
+</div> -->
+</div>
+</section>
+
+<!---------------footer------contact------------------->
+<section class="cta">
+    <h1>Join us in Pardise</h1>
+    <a href="Contact.html" class="hero-btn">CONTACT US</a>
+
+</section>
+<!------------------JavaScript------------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+    function first(){
+        document.getElementById("slideimage").src="images/f2.jpg";
+        }
+        
+        function second(){
+        document.getElementById("slideimage").src="images/f3.jpg";
+        }
+        function third(){
+        document.getElementById("slideimage").src="images/f1.jpg";
+        }
+        
+        setInterval(first,3000);
+        setInterval(second,6000);
+        setInterval(third,9000);
+</script>
+    </body>
+</html>
+
+
